@@ -62,7 +62,7 @@
                             <label for="ln">Last Name</label>
                         </td>
                         <td>
-                            <input type="lname" name="ln" id="ln">
+                            <input type="lname" name="ln" id="ln" required>
                         </td>
                     </tr>
                     <tr>
@@ -70,7 +70,7 @@
                             <label for="email">Email</label>
                         </td>
                         <td>
-                            <input type="email" name="email" id="email">
+                            <input type="email" name="email" id="email" required>
                         </td>
                     </tr>
                     <tr>
@@ -78,7 +78,7 @@
                             <label for="mob">Mobile</label>
                         </td>
                         <td>
-                            <input type="number" name="mob" id="mob">
+                            <input type="number" name="mob" id="mob" required>
                         </td>
                     </tr>
                     <tr>
@@ -86,22 +86,22 @@
                             <label>Gender</label>
                         </td>
                         <td>
-                            <input type="radio" name="gender" id="female">
+                            <input type="radio" name="gender" id="female" value="female" required>
                             <label for="female">Female</label><br>
 
-                            <input type="radio" name="gender" id="male" checked>
+                            <input type="radio" name="gender" id="male" value="male" checked required>
                             <label for="male">Male</label><br>
 
-                            <input type="radio" name="gender" id="other">
+                            <input type="radio" name="gender" id="other" value="other" required>
                             <label for="other">Other</label>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <label for="txt">Address</label>
+                            <label for="add">Address</label>
                         </td>
                         <td>
-                            <textarea name="txt" id="txt" style="background-color:transparent;outline: none;padding: 0px;"cols="53px" rows="8px"></textarea>
+                            <textarea name="add" id="add" style="background-color:transparent;outline: none;padding: 0px;"cols="53px" rows="8px" required></textarea>
                         </td>
                     </tr>
                     <tr>
@@ -109,7 +109,7 @@
                             <label for="dob">Date of birth</label>
                         </td>
                         <td>
-                            <input type="date" name="fn" id="dob">
+                            <input type="date" name="dob" id="dob" required>
                         </td>
                     </tr>
                     <tr>
@@ -117,7 +117,7 @@
                             <label for="country">Country</label>
                         </td>
                         <td>
-                            <select name="country" style="background-color:transparent;outline: none ;">
+                            <select name="country" style="background-color:transparent;outline: none ;" required>
                                 <option value="usa" selected>USA</option>
                                 <option value="ind">India</option>
                                 <option value="amer">America</option>
@@ -132,7 +132,7 @@
                             <label for="state">State</label>
                         </td>
                         <td>
-                            <input type="text" name="state" id="state">
+                            <input type="text" name="state" id="state" required>
                         </td>
                     </tr>
                     <tr>
@@ -140,7 +140,7 @@
                             <label for="city">City</label>
                         </td>
                         <td>
-                            <input type="text" name="city" id="city">
+                            <input type="text" name="city" id="city" required>
                         </td>
                     </tr>
                     <tr>
@@ -148,7 +148,7 @@
                             <label for="pin">pincode</label>
                         </td>
                         <td>
-                            <input type="number" name="pin" id="pin">
+                            <input type="number" name="pin" id="pin" required>
                         </td>
                     </tr>
                     <tr>
@@ -156,22 +156,22 @@
                             <label>Qualifications</label>
                         </td>
                         <td>
-                            <input type="checkbox" name="quali1" id="quali1">
+                            <input type="checkbox" name="quali1" id="quali1" value="10th">
                             <label for="quali1">High School(10th)</label><br>
 
-                            <input type="checkbox" name="quali2" id="quali2">
+                            <input type="checkbox" name="quali2" id="quali2" value="12th">
                             <label for="quali2">Higher School(12th)</label><br>
 
-                            <input type="checkbox" name="quali3" id="quali3">
+                            <input type="checkbox" name="quali3" id="quali3" value="final">
                             <label for="quali3">Graduation(Bachelors)</label><br>
 
-                            <input type="checkbox" name="quali4" id="quali4">
+                            <input type="checkbox" name="quali4" id="quali4" value="pgdca">
                             <label for="quali4">PGDCA</label><br>
 
-                            <input type="checkbox" name="quali5" id="quali5">
+                            <input type="checkbox" name="quali5" id="quali5" value="post_graduation">
                             <label for="quali5">Post Graduation (Master)</label><br>
 
-                            <input type="checkbox" name="quali6" id="quali6">
+                            <input type="checkbox" name="quali6" id="quali6" value="phd">
                             <label for="quali6">Phd</label><br>
                         </td>
                     </tr>

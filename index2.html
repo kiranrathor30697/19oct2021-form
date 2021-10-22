@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Responsive Form</title>
+        <style>
+            body{
+                background-color: rgb(51, 48, 48);
+                margin:0px;
+            }
+            form{
+                width: 600px;
+                height: 755px;
+                background-image: -webkit-linear-gradient(top,#84b6eb,#b0acdf,#fa99ce,#ff9ecc);
+                margin:80px auto;
+                padding-top: 20px;
+                padding-right: 20px;
+                padding-left: 20px;
+            }
+            ul{
+                list-style: none;
+                border: 1px solid red;
+                padding: 0px;
+                margin: auto;
+            }
+            .myform{
+               border: 1px solid gold;
+            }
+            input{
+                background-color:transparent;
+                border: none;
+                outline: none;
+                padding-left: 150px;
+            }
+            .input:not(.input > label){
+                padding-left: 150px;
+            }
+            label{
+                padding-left: 20px;
+            }
+            @media only screen and (max-width:411px) {
+                .myform > .fd > .ld > table >tr{
+                    background-color: red;
+                }
+            }
+        </style>
+        
+        <script>
+
+        </script>
+    </head>
+    <body>
+        <form class="myform">
+            <fieldset class="fd">
+                <legend class="ld">Registration Form Using Table and HTML</legend>
+                <ul>
+                    <li>
+                        <ul>
+                            <li>
+                                <div>
+                                    <label for="fn">First Name : </label>
+                                    <input type="name" name="fn" id="fn">
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li>
+                                <label for="ln">Last Name : </label>
+                                <input type="lname" name="ln" id="ln">
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li>
+                                <label for="email">Email : </label>
+                                <input type="email" name="email" id="email">
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li>
+                                <label for="mob">Mobile : </label>
+                                <input type="number" name="mob" id="mob">
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li>
+                                <label>Gender : </label>
+                                <input type="radio" name="gender" id="female">
+                                <label for="female">Female</label><br>
+    
+                                <input type="radio" name="gender" id="male" checked>
+                                <label for="male">Male</label><br>
+    
+                                <input type="radio" name="gender" id="other">
+                                <label for="other">Other</label>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li>
+                                <label for="txt">Address : </label>
+                                <textarea name="txt" id="txt" style="background-color:transparent;outline: none ;"cols="50px" rows="7px"></textarea>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li>
+                                <label for="dob">Date of birth : </label>
+                                <input type="date" name="fn" id="dob">
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li>
+                                <label for="country">Country : </label>
+                                <select name="country" style="background-color:transparent;outline: none ;">
+                                    <option value="usa" selected>USA</option>
+                                    <option value="ind">India</option>
+                                    <option value="amer">America</option>
+                                    <option value="jap">Japan</option>
+                                    <option value="shri">shri Lanka</option>
+                                    <option value="chin">China</option>
+                                </select>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li>
+                                <label for="state">State : </label>
+                                <input type="text" name="state" id="state">
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li>
+                                <label for="city">City : </label>
+                                <input type="text" name="city" id="city">
+                            </li>
+                        </ul>
+                        
+                    </li>
+                    <li>
+                        <ul>
+                            <li>
+                                <label for="pin">pincode : </label>
+                                <input type="number" name="pin" id="pin">
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li class="input">
+                                <label>Qualifications : </label>
+                                <input type="checkbox" name="quali1" id="quali1">
+                                <label for="quali1">High School(10th)</label><br>
+    
+                                <input type="checkbox" name="quali2" id="quali2">
+                                <label for="quali2">Higher School(12th)</label><br>
+    
+                                <input type="checkbox" name="quali3" id="quali3">
+                                <label for="quali3">Graduation(Bachelors)</label><br>
+    
+                                <input type="checkbox" name="quali4" id="quali4">
+                                <label for="quali4">PGDCA</label><br>
+    
+                                <input type="checkbox" name="quali5" id="quali5">
+                                <label for="quali5">Post Graduation (Master)</label><br>
+    
+                                <input type="checkbox" name="quali6" id="quali6">
+                                <label for="quali6">Phd</label><br>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>   
+            </fieldset>
+        </form>
+
+        <script>
+
+        </script>
+    </body>
+</html>

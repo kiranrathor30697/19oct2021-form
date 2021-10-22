@@ -8,66 +8,179 @@
         <style>
             body{
                 background-color: rgb(51, 48, 48);
-                color: #fff;
                 margin:0px;
             }
             form{
-                width: 500px;
-                height: 500px;
-                background-color: green;
+                width: 600px;
+                height: 755px;
+                background-image: -webkit-linear-gradient(top,#84b6eb,#b0acdf,#fa99ce,#ff9ecc);
                 margin:80px auto;
                 padding-top: 20px;
                 padding-right: 20px;
                 padding-left: 20px;
             }
+            table{
+                width: 540px;
+                height: 700px;
+               margin: auto;
+            }
+            input{
+                background-color:transparent;
+                border: none;
+                outline: none;
+                
+            }
+            label{
+                padding-left: 20px;
+            }
+            @media only screen and (max-width:411px) {
+                .myform > .fd > .ld > table >tr{
+                    background-color: red;
+                }
+            }
         </style>
-
+        
         <script>
 
         </script>
     </head>
     <body>
-        <form>
-            <fieldset>
-                <legend>Personal Information</legend>
-                <div>
-                    <label for="fn">First Name</label>
-                    <input type="name" name="fn" id="fn">
-                </div>
-                <div>
-                    <label for="ln">Last Name</label>
-                    <input type="lname" name="ln" id="ln">
-                </div>
-                <div>
-                    <label>Gender</label>
-                </div>
-                <div>
-                    <div>
-                        <input type="radio" name="gender" id="female">
-                        <label for="female">Female</label>
-                    </div>
-                    <div>
-                        <input type="radio" name="gender" id="male">
-                        <label for="male">Male</label>
-                    </div>
-                    <div>
-                        <input type="radio" name="gender" id="other">
-                        <label for="other">Other</label>
-                    </div>
-                </div>    
-                    
-                    <div>
-                    <label for="dob">Date of birth</label>
-                    <input type="dob" name="fn" id="dob">
-                </div>
-                <div>
-                    <label for="txt">Bio</label>
-                    <textarea name="txt" id="txt"></textarea>
-                </div>
+        <form class="myform">
+            <fieldset class="fd">
+                <legend class="ld">Registration Form Using Table and HTML</legend>
+                <table border="1px">
+                    <tr>
+                        <td>
+                            <label for="fn">First Name</label>
+                        </td>
+                        <td>
+                            <input type="name" name="fn" id="fn" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="ln">Last Name</label>
+                        </td>
+                        <td>
+                            <input type="lname" name="ln" id="ln">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="email">Email</label>
+                        </td>
+                        <td>
+                            <input type="email" name="email" id="email">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="mob">Mobile</label>
+                        </td>
+                        <td>
+                            <input type="number" name="mob" id="mob">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Gender</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="gender" id="female">
+                            <label for="female">Female</label><br>
 
+                            <input type="radio" name="gender" id="male" checked>
+                            <label for="male">Male</label><br>
 
+                            <input type="radio" name="gender" id="other">
+                            <label for="other">Other</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="txt">Address</label>
+                        </td>
+                        <td>
+                            <textarea name="txt" id="txt" style="background-color:transparent;outline: none;padding: 0px;"cols="53px" rows="8px"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="dob">Date of birth</label>
+                        </td>
+                        <td>
+                            <input type="date" name="fn" id="dob">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="country">Country</label>
+                        </td>
+                        <td>
+                            <select name="country" style="background-color:transparent;outline: none ;">
+                                <option value="usa" selected>USA</option>
+                                <option value="ind">India</option>
+                                <option value="amer">America</option>
+                                <option value="jap">Japan</option>
+                                <option value="shri">shri Lanka</option>
+                                <option value="chin">China</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="state">State</label>
+                        </td>
+                        <td>
+                            <input type="text" name="state" id="state">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="city">City</label>
+                        </td>
+                        <td>
+                            <input type="text" name="city" id="city">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="pin">pincode</label>
+                        </td>
+                        <td>
+                            <input type="number" name="pin" id="pin">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Qualifications</label>
+                        </td>
+                        <td>
+                            <input type="checkbox" name="quali1" id="quali1">
+                            <label for="quali1">High School(10th)</label><br>
 
+                            <input type="checkbox" name="quali2" id="quali2">
+                            <label for="quali2">Higher School(12th)</label><br>
 
+                            <input type="checkbox" name="quali3" id="quali3">
+                            <label for="quali3">Graduation(Bachelors)</label><br>
+
+                            <input type="checkbox" name="quali4" id="quali4">
+                            <label for="quali4">PGDCA</label><br>
+
+                            <input type="checkbox" name="quali5" id="quali5">
+                            <label for="quali5">Post Graduation (Master)</label><br>
+
+                            <input type="checkbox" name="quali6" id="quali6">
+                            <label for="quali6">Phd</label><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2 ">
+                            <button type="submit" value="Submit" style="width: 70px;height: 30px;background-color: transparent;display: block;margin: auto;">Submit</button>
+                        </td>
+                    </tr>
+                </table>   
             </fieldset>
         </form>
 
